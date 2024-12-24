@@ -254,7 +254,7 @@ class MouseHandler:
                 # 일반적인 edit을 위한 마커 선택
                 self.parent.current_marker = selected_marker
                 if self.parent.current_marker in self.parent.marker_names:
-                    self.parent.show_marker_plot(self.parent.current_marker)
+                    self.parent.marker_plotter.show_marker_plot(self.parent.current_marker)
             
             # 즉시 마커 색상 업데이트
             self.parent.update_plot()
